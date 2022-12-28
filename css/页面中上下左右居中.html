@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</script>
+<style>
+    @keyframes myfirst { 
+        from {
+            transform: rotate(0);
+        }
+        to {
+            transform: rotate(360deg);
+        }
+    } 
+
+    .m-cycle{
+        height: 30px;
+        width: 30px;
+        animation: myfirst 5s infinite linear;
+        animation-duration: 1.5s;
+        border-radius: 100%;
+        border: 1px solid rgb(114, 110, 110);
+        border-top: white;
+        margin: auto;
+    }
+    .m-wait-cycle{
+        
+    }
+    .m-popup{
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /* height: 100%; */
+        position: absolute;
+        top:40%;
+        left: calc(50% - 125px);
+        
+
+        width: 250px;
+        height: 100px;
+        border: 1px #cbcbcb solid;
+        box-shadow: 2px 2px 24px #cbcbcb;
+        border-radius: 5%;
+        display: flex;
+
+        
+    }
+</style>
+</head>
+<body>
+      
+    <div class="m-wait-cycle">
+        <div class="m-popup">
+            <div class="m-cycle"></div>
+            
+        </div>  
+        
+    </div>
+
+</body>
+</html>
+
