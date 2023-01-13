@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            width: 200px;
+            height: 200px;
+            background-color: #bfa;
+            margin: auto;  
+            /* border-radius: 5%; */
+            border-top-left-radius: 168% 168%;
+            border-top-right-radius: 30%;
+            border-bottom-left-radius: 30%;
+            border-bottom-right-radius: 168% 168%;
+        }
+
+        .box:hover{
+            /* 设置轮廓 */
+            /* outline: 1px black solid; */
+            /* 设置阴影 */
+            /* 
+                box-shadow 设置元素的阴影效果,不会影响元素的布局
+                第一个值是 水平偏移量,正值右移,负值左移
+                第二个值是 垂直偏移量,正值右移,负值左移
+                第三个值是 阴影的模糊半径,值越大越模糊
+                第四个值是 阴影的颜色  
+            */
+            box-shadow:  0 0 15px rgba(0, 0, 0, .2);
+        }
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+</body>
+</html>
