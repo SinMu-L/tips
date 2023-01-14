@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>浮动</title>
+    <style>
+        .box1 {
+            width: 200px;
+            height: 200px;
+            background-color: #bfa;
+
+            /* float: left; */
+        }
+
+        /* 
+            浮动元素会脱离文档流，不再占用文档流中的位置
+            浮动元素不会从父元素中移出
+            浮动元素移动的时候共同占用父元素的宽度。浮动元素向左向右移动的时候，不会超过它前边的其他浮动元素
+
+        */
+        .box2 {
+            width: 300px;
+            height: 300px;
+            background-color: orange;
+
+            float: left;
+        }
+
+        body{
+            margin: 0;
+        }
+
+        .left_menu {
+            /* width: 400px; */
+            height: 3rem;
+            /* background-color: #bfa; */
+            float: left;
+
+            text-align: center;
+            line-height: 3rem;
+            font-size: 18px;
+        }
+
+        .right_menu {
+            width: 200px;
+            height: 3rem;
+            /* background-color: orange; */
+            float: right;
+
+            /* 文字水平居中 */
+            text-align: center;
+            /* 行高和高度一致即可垂直居中 */
+            line-height: 3rem;
+            font-size: 18px;
+        }
+
+        .logo {
+            width: 300px;
+            height: 3rem;
+            /* background-color: green; */
+            float: left;
+            font-size: 36px;
+        }
+
+        /* 添加 导航栏背景色 */
+        .menu {
+            background-color: #eeeeee;
+            height: 3rem;
+            text-align: center;
+            line-height: 3rem;
+            font-size: 24px;
+        }
+
+        a{
+            text-decoration: none;
+            color: unset;
+        }
+        a:hover{
+            color: red;
+        }
+
+        .left_menu > span:not(:last-child)::after {
+            content: "\00a0";
+        }
+        
+    </style>
+</head>
+
+<body>
+    <!-- <div class="box1"></div> -->
+
+
+    <!-- <div class="box2"></div> -->
+
+
+    <!-- 可以尝试一下导航栏，左右结构 -->
+    <div class="menu">
+        <div class="logo">Logo</div>
+        <div class="left_menu">
+            <span class="category"><a href="1">HTML</a></span>
+            <span class="category"><a href="2">CSS</a></span>
+            <span class="category"><a href="3">JS</a></span>
+            <span class="category"><a href="4">NodeJs</a></span>
+
+        </div>
+        <div class="right_menu">
+            <span><a href="login">登录</a></span>
+            <span><a href="register">注册</a></span>
+        </div>
+    </div>
+
+</body>
+
+</html>
