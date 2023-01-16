@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>仿 W3cSchool.com.cn 的导航栏</title>
+
+    <style>
+        
+        /* 设置自定义属性 */
+        :root {
+            --main-height: 48px
+        }
+        .nav{
+            height: var(--main-height);
+            /* width: 70%; */
+            background-color: #eeeeee;
+            margin: 10px auto;
+        }
+        .nav > div{
+            float: left;
+            /* 等分每一个div */
+            width: calc( 100% / 7);
+            font-size: 20px;
+
+            /* 设置子元素 水平垂直居中 */
+            line-height: var(--main-height);
+            text-align: center;
+            
+        }
+        .nav > div > a{
+            text-decoration: none;
+            color: rgb(107, 107, 107);
+            /* 将 a 标签设置为块元素 */
+            display: block;
+            
+        }
+
+        .nav > div > a:hover{
+            color: white;
+            background-color: black;
+        }
+        
+    </style>
+</head>
+<body>
+    <!-- https://www.w3school.com.cn/ -->
+
+    <div class="nav">
+        <div class="test"><a href="1">HTML/CSS</a></div>
+        <div><a href="2">Browswer Side</a></div>
+        <div><a href="3">Server Side</a></div>
+        <div><a href="4">Programming</a></div>
+        <div><a href="5">XML</a></div>
+        <div><a href="6">Web Building</a></div>
+        <div><a href="7">Reference</a></div>
+    </div>
+
+</body>
+</html>
