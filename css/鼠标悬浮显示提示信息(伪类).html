@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>鼠标悬浮显示提示信息(伪类)</title>
+    <style>
+        .content{
+            margin: auto;
+
+            /* 内部的内容水平垂直居中 */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+
+            width: 200px;
+            height: 200px;
+            border: 1px red solid;
+        }
+
+        .content:hover::after{
+            content: "这是悬浮提示";
+            background-color: white;
+            border: 1px black solid;
+            position: absolute;
+            left: 57%;
+            top: auto;
+            font-size: 13px;
+            padding: 3px;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="content">鼠标悬浮就可以看到提示了</div>
+</body>
+</html>
