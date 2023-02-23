@@ -1,0 +1,73 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  html {
+    font-family: sans-serif;
+  }
+  
+  body {
+    margin: 0;
+    background: #ccc;
+  }
+  
+  article {
+    width: 210mm;
+    height: 297mm;
+    margin: 20px auto;
+    position: relative;
+  }
+  
+  address {
+    position: absolute;
+    bottom: 8mm;
+    right: 20mm;
+  }
+  
+  h1 {
+    position: absolute;
+    top: 12mm;
+    left: 20mm;
+    width: 128px;
+    height: 128px;
+    font-size: 20px;
+    letter-spacing: 1px;
+    text-align: center;
+    padding: 44px 0;
+    color: white;
+    text-shadow: 1px 1px 1px black;
+  }
+  
+  /* Your CSS below here */
+  article{
+    border: 1px red solid;
+    /* 背景渐变色还是不太熟悉 */
+    /* 
+      文档链接：https://developer.mozilla.org/en-US/docs/Web/CSS/gradient/linear-gradient
+      第一个参数控制方向，其他的参数是渐变的颜色
+      to bottom 是从上往下渐变
+    */
+    background-image: linear-gradient(to bottom,rgb(172, 173, 172) ,10%,white,90%,rgb(172, 173, 172) );
+  }
+
+  
+  .top img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+  }
+  .footer img{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+  }
+  h1{
+    background-image: url(./img/logo.png);
+    border-radius: 50%;
+    box-shadow: 2px 2px 2px 2px rgb(117, 112, 112);
+  }
+
+
+  
