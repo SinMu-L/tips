@@ -1,0 +1,47 @@
+html {
+    font-family: sans-serif;
+  }
+  
+  /* Your CSS below here */
+
+  body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  p{
+
+    width: 200px;
+    height: 200px;
+    line-height: 200px;
+    text-align: center;
+    font-size: 1.125rem;
+    border-radius: 5%;
+    border: 1px red solid;
+    color: white;
+    
+    
+    /* 从右下到左上、从蓝色渐变到红色 */
+    /* linear-gradient(to left top, blue, red); */
+    
+    /* 一个指向右下角的黑色半透明线性渐变，
+    让它在开始的时候完全透明，在 30% 的处渐变到 0.2 的不透明度，
+    然后保持相同颜色到最后。 */
+    
+    background-color: red;
+    background-image: linear-gradient(to left top, rgba(0,0,0),rgba(0,0,0,0.2) 30%,rgba(0,0,0,0.2));
+
+
+
+    /* 多个盒阴影：一个标准的盒阴影，使它看起来稍微从页面上浮起来；
+        另外两个是内嵌（inset）的盒阴影，
+        一个是左上角附近的白色半透明阴影和另一个是右下角附近的黑色半透明阴影，
+        让盒子有一个漂亮的 3D 外观。 */
+
+        /* 参考：https://developer.mozilla.org/zh-CN/docs/Web/CSS/box-shadow */
+        box-shadow: inset -2px -2px 3px rgba(255, 255, 255, .5),
+            inset 2px 2px 3px rgba(0,0,0,0.5),
+            2px 2px 5px black;
+
+  }
